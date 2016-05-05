@@ -1,0 +1,27 @@
+---
+MethodLength:
+  Max: 40
+
+ClassLength:
+  Max: 200
+
+Style/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Style/MethodName:
+  Enabled: false
+
+Style/VariableName:
+  Enabled: false
+
+Style/FileName:
+  Enabled: false
+
+Lint/HandleExceptions:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
