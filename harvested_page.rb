@@ -13,6 +13,7 @@ class HarvestedPage
     [].tap do |sofas|
       @rows.each do |r|
         cols = r.xpath(%(.//td))
+        next if cols.length < 2
         link = cols[1].xpath(%(.//a))[0]
         sofa = Sofa.new(link.attr('href'), link.inner_text)
         sofas << sofa if sofa.image?

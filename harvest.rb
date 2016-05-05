@@ -27,15 +27,18 @@ class Harvester
 
   def group_list
     %w(
-      freecyclebarnet
+      HampsteadUK
+      kentishtown_freecycle
+      camdensouth_freecycle
     )
   end
 
   def harvest
     group_list.each do |group|
-      @sofas.concat(harvest_group(group))
+      puts "<h3>#{group}</h3>"
+      sofas = harvest_group(group)
+      sofas.each { |s| puts s.to_html }
     end
-    @sofas.each { |s| puts s.to_html }
   end
 end
 
