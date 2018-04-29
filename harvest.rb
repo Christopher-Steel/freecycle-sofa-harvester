@@ -13,7 +13,7 @@ class Harvester
   def harvest_group(group)
     @api["group/#{group}/posts/search"].post(
       {
-        search_words: 'sofa couch settee',
+        search_words: 'corner sofa couch settee',
         include_offers: 'on',
         date_start: '',
         date_end: '',
@@ -30,6 +30,14 @@ class Harvester
       HampsteadUK
       kentishtown_freecycle
       camdensouth_freecycle
+      Islington-North-Freecycle
+      Islington-South-Freecycle
+      Islington-East-Freecycle
+      islington-west-freecycle
+      KensingtonandChelseaFreecycle
+      HackneyUK
+      HaringeyUK
+      freecyclebarnet
     )
   end
 
